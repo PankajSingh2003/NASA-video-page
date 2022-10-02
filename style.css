@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Raleway";
+  }
+  
+  .bloc-video {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .bloc-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    position:absolute;
+  }
+  
+  .bloc-video .content-video {
+    flex-direction: column;
+    color: #ffffff;
+    margin-top: 80px;
+    font-size: 62px;
+  }
+  
+  .bloc-video .content-video .content-text, .content-button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bloc-video .content-video .content-button {
+    margin-top: 50px;
+  }
+  
+  .bloc-video .content-video .content-button button {
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-family: cursive;
+    background: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .bloc-video .content-video .content-button button:hover {
+    transition: all .75s ease-in-out;
+    background-color: #ffffff;
+    color: #000000;
+    transform: rotateX(360deg);
+  }
+  
+  @media (max-width: 768px) {
+    .bloc-video video {
+      height: 100vh;
+    }
+  }
